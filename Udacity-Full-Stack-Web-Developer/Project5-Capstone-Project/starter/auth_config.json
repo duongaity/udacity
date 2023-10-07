@@ -1,0 +1,35 @@
+{
+    "roles": {
+        "Casting Assistant": {
+            "description": "Can View Actors And Movies",
+            "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkF5YkZZU0o1SkUyNTRPdWp0TFJJMiJ9.eyJpc3MiOiJodHRwczovL2Rldi1mc25kLWNhcHN0b25lLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NGVkZWQ0MTQ5ZTMxMTAzNWFkN2JiMWYiLCJhdWQiOiJjYXBzdG9uZSIsImlhdCI6MTY5NDUzMDQyNSwiZXhwIjoxNjk0NjE2ODI1LCJhenAiOiJtV2d1NnBBemRvZWthRXJmaFVXdkhEd21zZk1SeWg5ZyIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiXX0.AQM8fQ_V0OXuF01FWJQV3aUprF9vJDRf_LC-9j0swUsNAqkZduMCdShsVfz1r8WCtQwJODio1EvxG1sahfBiBeoNS7Z4YGJdZSH_DhHcClW0VNDzkYzyBbI8NSwj4Uw31G77IyonccFIha1vhz17_f9Qurfm7dQccFXuD_o7aIztmbzpxdt0ONpJnisuu1mzDoXmVkloKzXK4FPpWiQViArzPT8m6XizhOUvQgezZGjqZaRtOZaiffu3PBBKg-8NNifCSoGr_lpM_89RNPNqZq3Y2qJxW2XvdicB3ly2_ca8J58Gf0uVoxXFT-hYjtPclU9xiUsVTwHrqk-at68_EA",
+            "permissions": ["get:actors", "get:movies"]
+        },
+        "Casting Director": {
+            "description": "CRUD Actor and CRU Movie",
+            "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkF5YkZZU0o1SkUyNTRPdWp0TFJJMiJ9.eyJpc3MiOiJodHRwczovL2Rldi1mc25kLWNhcHN0b25lLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NGVkZWQ2MTQ5ZTMxMTAzNWFkN2JiMmMiLCJhdWQiOiJjYXBzdG9uZSIsImlhdCI6MTY5NDQ0NDY4MywiZXhwIjoxNjk0NTMxMDgzLCJhenAiOiJtV2d1NnBBemRvZWthRXJmaFVXdkhEd21zZk1SeWg5ZyIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiY3JlYXRlOmFjdG9ycyIsImRlbGV0ZTphY3RvcnMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInVwZGF0ZTphY3RvcnMiLCJ1cGRhdGU6bW92aWVzIl19.EjcJakbCXZ5DK3ufqydsuLY3uCZi-0clvW4f4fnXeGAgUueFPWnZOInB20wrp_3hPWFy5_GT7DWrXy-tHlkeWCnZtIGY14HC7Cb8MGnMkeh1An_ZppmRn1qkslWRfcHmIQdI60q8emZXu-0BcD6YAmEo-JXcAsEX-kSDQBdEbyohuNmK6D222uWgmEBWWBvqh7z2IyrWCNiNB45bWVhO5JQJ10_DKXdPlRfD2HsTxHijnIYEkrxqSaGUTolzMpeufp3TDAInO1W9C_SdkPSNrotQQOmA4LydV8CllTFt1pylCKdobCX8xYhOuDNxbp8GKYs-xX0nmw8uLqAySfDomw",
+            "permissions": [
+                "get:actors",
+                "create:actors",
+                "update:actors",
+                "delete:actors",
+                "get:movies",
+                "update:movies"
+            ]
+        },
+        "Executive Producer": {
+            "description": "CRUD Actor and Movie",
+            "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkF5YkZZU0o1SkUyNTRPdWp0TFJJMiJ9.eyJpc3MiOiJodHRwczovL2Rldi1mc25kLWNhcHN0b25lLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NGVkZWQ3ZTQ5ZTMxMTAzNWFkN2JiMzIiLCJhdWQiOiJjYXBzdG9uZSIsImlhdCI6MTY5NDQ0NDAwOSwiZXhwIjoxNjk0NTMwNDA5LCJhenAiOiJtV2d1NnBBemRvZWthRXJmaFVXdkhEd21zZk1SeWg5ZyIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiY3JlYXRlOmFjdG9ycyIsImNyZWF0ZTptb3ZpZXMiLCJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwidXBkYXRlOmFjdG9ycyIsInVwZGF0ZTptb3ZpZXMiXX0.jKgkgnf41FeVldIwqR9LxNTikVE04KI3QITkwa9WY23vwwc8g7dXSLx2pFnVtE3JZoM62tMtOaMZTry3Tk_b2_Ur42kqIlnBWDfTIunclq7-Q_kDJsd9itbxjExh5fjzjhuTn8lJkh4KLYQNv0fv_QOMRolExGog2qjQJC_21m79SjaRGu52T_a6mlGdxZG55y50cgGSmvu4rrH3bnxpbY8PtPXW-A8QIJSQbpGvEvCJbDUi4-5psHMZAfx9h_RYOMHGfW4BsVbHtbCeLu1mNnESgVS0emV9jHOIFz-9bKAmY7HltBrqnPpKn2OuRpoIwxdXol7j9Xl-Fi1ZflvGQQ",
+            "permissions": [
+                "get:actors",
+                "create:actors",
+                "update:actors",
+                "delete:actors",
+                "get:movies",
+                "create:movies",
+                "update:movies",
+                "delete:movies"
+            ]
+        }
+    }
+}

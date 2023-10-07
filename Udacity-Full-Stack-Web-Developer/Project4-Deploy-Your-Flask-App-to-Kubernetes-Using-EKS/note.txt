@@ -1,0 +1,19 @@
+ELB: http://a2ecffb95dd01496499adad7227b41c5-560175645.us-east-2.elb.amazonaws.com/
+
+1. Healthy
+
+curl --location 'http://a2ecffb95dd01496499adad7227b41c5-560175645.us-east-2.elb.amazonaws.com/'
+
+2. Token
+
+curl --location 'http://a2ecffb95dd01496499adad7227b41c5-560175645.us-east-2.elb.amazonaws.com/auth' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email":"duongaity@gmail.com",
+    "password":"123456"
+}'
+
+3. API
+
+curl --location 'http://a2ecffb95dd01496499adad7227b41c5-560175645.us-east-2.elb.amazonaws.com/contents' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2OTc3MjYxMjAsIm5iZiI6MTY5NjUxNjUyMCwiZW1haWwiOiJkdW9uZ2FpdHlAZ21haWwuY29tIn0.f9AGTaz_ITIQSBVK4pA1PAybW9CPfLUKWgipxKTcc_Q'
